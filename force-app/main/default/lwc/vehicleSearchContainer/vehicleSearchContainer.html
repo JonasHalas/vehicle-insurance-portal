@@ -1,0 +1,65 @@
+<template>
+
+	<lightning-layout-item>
+        <h1>Find Your Vehicle</h1>
+    </lightning-layout-item>
+
+	<lightning-layout class="main-container slds-box" multiple-rows>
+		
+		<lightning-layout-item class="slds-box_small"
+			size="12" 
+			padding="around-small">
+			<lightning-input required
+				name="enter-search"
+				type="search"
+				value={vehReg}
+				label="Vehicle Registraion Number:"
+				placeholder="Search vehicle registration number..">
+			</lightning-input>
+
+		</lightning-layout-item>
+
+		<lightning-layout-item class="slds-box_small slds-align_absolute-center"
+			size="12"
+			padding="around-small">
+			<lightning-button
+				variant="brand"
+				label="Search"
+				title="Non-primary action"
+				onclick={handleClick}>
+			</lightning-button>
+
+			<div if:true={vehicles.data}>
+				<p>Make: {brand}</p>
+				<p>Model: {model}</p>
+				<p>Year: {fuel}</p>
+			  </div>
+
+			  <div if:true={vehicles.error}>
+				  <p>Something wrong happened!</p>
+				</div>
+
+		</lightning-layout-item>
+
+		<!-- Delete below later, testing JS -->
+
+		<!--
+		<lightning-layout-item class="slds-box_small"
+		size="12">
+
+			<div>
+			  <h1>Vehicle Search</h1>
+			  <input type="text" placeholder="Enter vehicle registration" onchange={handleInputChange} />
+			  <button type="button" onclick={handleSearch}>Search</button>
+			  <template if:true={vehicleDetails}>
+				<p>Make: {vehicleDetails.make}</p>
+				<p>Model: {vehicleDetails.model}</p>
+				<p>Year: {vehicleDetails.year}</p>
+			  </template>
+			</div>
+
+		</lightning-layout-item>
+		-->
+	</lightning-layout>
+
+</template>

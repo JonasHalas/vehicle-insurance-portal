@@ -1,0 +1,17 @@
+/* * Use if veh-reg-no is enabled
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.veh-reg-no {
+    max-width: min-content;
+    min-width: max-content;
+}
+*/
+
+h1 {
+    font-size: large;
+    text-align: center;
+    padding: 0.5rem;
+}

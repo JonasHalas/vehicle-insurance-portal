@@ -1,5 +1,11 @@
 # vehicle-insurance-portal
  
+ ** Current state of the case**
+ Apex classes in both orgs are finished to gather the data needed.
+ HTML and CSS is finished in the LWC, currently need to finish the JavaScript and create a Wrapper class to fetch the data from Apex to LWC.
+ 
+ 
+ 
 To get a better understanding of this case, please visit the following link as I have created a data flow of the case:
 https://www.figma.com/file/dYG47EgZgFA6e5I8gjWC2C/Data-Flow---Vehicle-Insurance-Portal?node-id=0%3A1&t=NBHVMgQyfCBvuNmm-1
 
